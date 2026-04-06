@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Quốc Huy - Premium Portfolio 🚀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">QH</a>
+      <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">🏠 Trang Chủ</a></li>
+        <li><a href="#about" class="nav-link">👤 Về Tôi</a></li>
+        <li><a href="#skills" class="nav-link">⚡ Kỹ Năng</a></li>
+        <li><a href="#projects" class="nav-link">🎯 Dự Án</a></li>
+        <li><a href="#contact" class="nav-link">💬 Liên Hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="greeting">👋 Xin chào, tôi là</span>
+        <h1 class="hero-title">NGUYỄN QUỐC HUY</h1>
+        <p class="hero-subtitle">💻 <span id="typed"></span> • Gen Z • Đắk Lắk ☕</p>
+        <p class="student-id">🎓 MSSV: <strong>PK04633</strong> | Cao Đẳng FPT Polytechnic</p>
+        <p class="hero-description">🚀 Đam mê tạo ra những trải nghiệm web đẹp, tương tác với công nghệ hiện đại nhất!</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg">
+            <span>🔥 Khám Phá Dự Án</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <a href="CV_QuocHuy_PRO.pdf" download class="btn btn-outline btn-lg">
+            <span>📥 Tải CV</span>
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card avatar-frame">
+          <img src="avatar.jpg" alt="Avatar Nguyễn Quốc Huy" class="avatar-img" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>⬇️ Cuộn xuống để khám phá</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-header reveal">
+      <h2>Về Tôi</h2>
+      <div class="header-line"></div>
+    </div>
+    
+    <div class="about-container">
+      <div class="about-grid">
+        <div class="about-card reveal" style="--delay: 0.1s">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>🎓 Học Tập</h3>
+          <p>Cao Đẳng FPT Polytechnic<br>Ứng Dụng Phần Mềm</p>
+        </div>
+        <div class="about-card reveal" style="--delay: 0.2s">
+          <div class="card-icon"><i class="fas fa-location-dot"></i></div>
+          <h3>📍 Quê Hương</h3>
+          <p>Đắk Lắk, Việt Nam<br>Thủ phủ cà phê ☕</p>
+        </div>
+        <div class="about-card reveal" style="--delay: 0.3s">
+          <div class="card-icon"><i class="fas fa-fire"></i></div>
+          <h3>🔥 Đam Mê</h3>
+          <p>Code • Design<br>Innovation • Sáng Tạo</p>
+        </div>
+        <div class="about-card reveal" style="--delay: 0.4s">
+          <div class="card-icon"><i class="fas fa-star"></i></div>
+          <h3>⭐ Mục Tiêu</h3>
+          <p>Tạo UX Tuyệt Vời<br>Code Sạch & Đẹp</p>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p>🎯 Mình là một developer Gen Z đam mê biến cà phê thành code ☕! Hiện đang học tại Cao Đẳng FPT Polytechnic, mình yêu thích tạo ra những trải nghiệm web đẹp, responsive mà mọi người yêu thích.</p>
+        <p>💡 Với nền tảng vững chắc về Frontend và Backend, mình kết hợp design thinking với code sạch để xây dựng những ứng dụng không chỉ hoạt động hoàn hảo mà còn nhìn cực xịn!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="section-header reveal">
+      <h2>Vũ Khí Bỏ Túi 🔥</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="skills-container">
+      <div class="skill-category reveal" style="--delay: 0.1s">
+        <h3>💎 Frontend</h3>
+        <div class="skill-list">
+          <div class="skill-bar">
+            <span>HTML5 & CSS3</span>
+            <div class="progress"><div class="progress-bar" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="progress"><div class="progress-bar" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>Responsive Design</span>
+            <div class="progress"><div class="progress-bar" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal" style="--delay: 0.2s">
+        <h3>⚙️ Backend</h3>
+        <div class="skill-list">
+          <div class="skill-bar">
+            <span>Java & OOP</span>
+            <div class="progress"><div class="progress-bar" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>SQL & Databases</span>
+            <div class="progress"><div class="progress-bar" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>Problem Solving</span>
+            <div class="progress"><div class="progress-bar" data-width="88"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal" style="--delay: 0.3s">
+        <h3>🛠️ Công Cụ & Khác</h3>
+        <div class="skill-list">
+          <div class="skill-bar">
+            <span>Git & Version Control</span>
+            <div class="progress"><div class="progress-bar" data-width="82"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>UI/UX Design</span>
+            <div class="progress"><div class="progress-bar" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar">
+            <span>Teamwork</span>
+            <div class="progress"><div class="progress-bar" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-tags reveal">
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Java</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Git</span>
+      <span class="tag">React</span>
+      <span class="tag">UI/UX</span>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="section-header reveal">
+      <h2>Chiến Tích Của Mình 🏆</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal" style="--delay: 0.1s">
+        <div class="project-image">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+            <defs>
+              <linearGradient id="portfolioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#8338ec;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <rect x="30" y="30" width="140" height="140" rx="10" fill="url(#portfolioGrad)" opacity="0.3"/>
+            <rect x="40" y="50" width="120" height="20" rx="5" fill="#00d4ff"/>
+            <line x1="40" y1="85" x2="160" y2="85" stroke="#ff006e" stroke-width="3" stroke-linecap="round"/>
+            <line x1="40" y1="105" x2="150" y2="105" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/>
+            <line x1="40" y1="125" x2="155" y2="125" stroke="#8338ec" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="85" cy="155" r="8" fill="#ff006e"/>
+            <circle cx="115" cy="155" r="8" fill="#00d4ff"/>
+            <circle cx="145" cy="155" r="8" fill="#8338ec"/>
+          </svg>
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3>💼 Website Giới Thiệu</h3>
+          <p>Trang web giới thiệu cá nhân với animations mượt mà, tương tác smooth và design hiện đại.</p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="http://quochuynguyen.site/" target="_blank" class="project-link">Xem Chi Tiết 🔍</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="--delay: 0.2s">
+        <div class="project-image">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="svg-icon">
+            <defs>
+              <linearGradient id="mmoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="70" fill="url(#mmoGrad)" opacity="0.2"/>
+            <circle cx="70" cy="80" r="20" fill="#FFD700" stroke="#ff006e" stroke-width="2"/>
+            <circle cx="70" cy="80" r="14" fill="none" stroke="#fff" stroke-width="1"/>
+            <text x="70" y="85" text-anchor="middle" fill="#ff006e" font-weight="bold" font-size="16">$</text>
+            <circle cx="130" cy="100" r="20" fill="#00d4ff" stroke="#8338ec" stroke-width="2"/>
+            <circle cx="130" cy="100" r="14" fill="none" stroke="#fff" stroke-width="1"/>
+            <text x="130" y="105" text-anchor="middle" fill="#8338ec" font-weight="bold" font-size="16">◆</text>
+            <circle cx="100" cy="140" r="18" fill="#8338ec" stroke="#00d4ff" stroke-width="2"/>
+            <circle cx="100" cy="140" r="12" fill="none" stroke="#fff" stroke-width="1"/>
+            <text x="100" y="146" text-anchor="middle" fill="#00d4ff" font-weight="bold" font-size="14">⚡</text>
+            <path d="M 70 60 Q 100 40 130 60" fill="none" stroke="#00d4ff" stroke-width="2" stroke-dasharray="5,5"/>
+          </svg>
+          <div class="project-overlay"></div>
+        </div>
+        <div class="project-content">
+          <h3>💰 Web Bán Tài Nguyên MMO</h3>
+          <p>Nền tảng giao dịch tài nguyên MMO với hệ thống thanh toán bảo mật, chat real-time và quản lý account tiên tiến.</p>
+          <div class="project-tech">
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>React</span>
+            <span>Socket.io</span>
+          </div>
+          <a href="https://quochuypro2411.github.io/QUOCHUYMMO/" target="_blank" class="project-link">Xem Chi Tiết 🔍</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    <div class="section-header reveal">
+      <h2>Kết Nối Với Mình 💫</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info reveal">
+        <h3>📧 Liên Hệ Tôi</h3>
+        <p>🎯 Mình luôn sẵn sàng nghe về các dự án mới và cơ hội thú vị!</p>
+        
+        <div class="contact-methods">
+          <a href="mailto:contactforwork.quochuy@gmail.com" target="_blank" class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <p class="label">📨 Email</p>
+              <p>contactforwork.quochuy@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:0336556137" target="_blank" class="contact-method">
+            <i class="fas fa-phone"></i>
+            <div>
+              <p class="label">☎️ Điện Thoại</p>
+              <p>0336556137</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="social-links reveal">
+        <h3>🌐 Theo Dõi Mình</h3>
+        <div class="social-buttons">
+          <a href="https://github.com/quochuypro2411" target="_blank" class="social-btn" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/i.amngquochuy/" target="_blank" class="social-btn" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://t.me/nqh2411" target="_blank" class="social-btn" title="Telegram">
+            <i class="fab fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Nguyễn Quốc Huy. Bảo Lưu Mọi Quyền.</p>
+      <p>Made with <i class="fas fa-heart"></i> from Đắk Lắk ☕</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
